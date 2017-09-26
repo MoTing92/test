@@ -14572,3 +14572,191 @@ java.lang.StackOverflowError: null
 2017-09-25 20:43:11.381  INFO 9048 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
 2017-09-25 20:43:11.381  INFO 9048 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
 2017-09-25 20:43:11.398  INFO 9048 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2017-09-26 22:04:48.039  INFO 9104 --- [main] c.springboot.manager.ManagerApplication  : Starting ManagerApplication on PC-20170506TCHA with PID 9104 (E:\github\test\manager\target\classes started by Administrator in E:\github\test\manager)
+2017-09-26 22:04:48.061  INFO 9104 --- [main] c.springboot.manager.ManagerApplication  : No active profile set, falling back to default profiles: default
+2017-09-26 22:04:48.261  INFO 9104 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@157632c9: startup date [Tue Sep 26 22:04:48 CST 2017]; root of context hierarchy
+2017-09-26 22:04:50.485  WARN 9104 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cmsz.springboot.mapper]' package. Please check your configuration.
+2017-09-26 22:04:50.798  INFO 9104 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-09-26 22:04:50.862  INFO 9104 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-09-26 22:04:51.851  INFO 9104 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$dcc78d04] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-09-26 22:04:52.026  INFO 9104 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2017-09-26 22:04:53.336  INFO 9104 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8082 (http)
+2017-09-26 22:04:53.368  INFO 9104 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-09-26 22:04:53.368  INFO 9104 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-09-26 22:04:53.580  INFO 9104 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-09-26 22:04:53.580  INFO 9104 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5319 ms
+2017-09-26 22:04:53.784  INFO 9104 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-26 22:04:53.784  INFO 9104 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'messageDispatcherServlet' to [/services/*]
+2017-09-26 22:04:53.784  INFO 9104 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-26 22:04:53.784  INFO 9104 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-26 22:04:53.784  INFO 9104 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-26 22:04:53.784  INFO 9104 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-26 22:04:54.305  INFO 9104 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2017-09-26 22:04:54.871  INFO 9104 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-26 22:04:54.902  INFO 9104 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-09-26 22:04:55.097  INFO 9104 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-09-26 22:04:55.113  INFO 9104 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-09-26 22:04:55.113  INFO 9104 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-09-26 22:04:55.269  INFO 9104 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-09-26 22:04:55.598  INFO 9104 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-09-26 22:04:56.088  INFO 9104 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-26 22:04:57.690  INFO 9104 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@157632c9: startup date [Tue Sep 26 22:04:48 CST 2017]; root of context hierarchy
+2017-09-26 22:04:57.849  INFO 9104 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.springboot.manager.controller.MainController.index()
+2017-09-26 22:04:57.849  INFO 9104 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-26 22:04:57.849  INFO 9104 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-26 22:04:57.896  INFO 9104 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-26 22:04:57.896  INFO 9104 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-26 22:04:57.943  INFO 9104 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-26 22:04:57.974  INFO 9104 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: ServletContext resource [/index.html]
+2017-09-26 22:04:58.739  INFO 9104 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-26 22:04:58.739  INFO 9104 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'getDataSource' has been autodetected for JMX exposure
+2017-09-26 22:04:58.739  INFO 9104 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'getDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=getDataSource,type=DruidDataSource]
+2017-09-26 22:04:59.086  INFO 9104 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8082 (http)
+2017-09-26 22:04:59.086  INFO 9104 --- [main] c.springboot.manager.ManagerApplication  : Started ManagerApplication in 12.583 seconds (JVM running for 13.864)
+2017-09-26 22:05:21.575  INFO 9104 --- [http-nio-8082-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-26 22:05:21.576  INFO 9104 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-26 22:05:21.634  INFO 9104 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 58 ms
+2017-09-26 22:15:24.989  INFO 10056 --- [main] c.springboot.manager.ManagerApplication  : Starting ManagerApplication on PC-20170506TCHA with PID 10056 (E:\github\test\manager\target\classes started by Administrator in E:\github\test\manager)
+2017-09-26 22:15:24.989  INFO 10056 --- [main] c.springboot.manager.ManagerApplication  : No active profile set, falling back to default profiles: default
+2017-09-26 22:15:25.036  INFO 10056 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@157632c9: startup date [Tue Sep 26 22:15:25 CST 2017]; root of context hierarchy
+2017-09-26 22:15:25.675  WARN 10056 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cmsz.springboot.mapper]' package. Please check your configuration.
+2017-09-26 22:15:25.879  INFO 10056 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-09-26 22:15:25.910  INFO 10056 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-09-26 22:15:26.363  INFO 10056 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$7dc1d47f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-09-26 22:15:26.394  INFO 10056 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2017-09-26 22:15:27.346  INFO 10056 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8082 (http)
+2017-09-26 22:15:27.361  INFO 10056 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-09-26 22:15:27.361  INFO 10056 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-09-26 22:15:27.487  INFO 10056 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-09-26 22:15:27.487  INFO 10056 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2451 ms
+2017-09-26 22:15:27.627  INFO 10056 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-26 22:15:27.643  INFO 10056 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'messageDispatcherServlet' to [/services/*]
+2017-09-26 22:15:27.643  INFO 10056 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-26 22:15:27.643  INFO 10056 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-26 22:15:27.643  INFO 10056 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-26 22:15:27.643  INFO 10056 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-26 22:15:27.783  INFO 10056 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2017-09-26 22:15:28.017  INFO 10056 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-26 22:15:28.033  INFO 10056 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-09-26 22:15:28.111  INFO 10056 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-09-26 22:15:28.111  INFO 10056 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-09-26 22:15:28.111  INFO 10056 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-09-26 22:15:28.158  INFO 10056 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-09-26 22:15:28.423  INFO 10056 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-09-26 22:15:28.611  INFO 10056 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-26 22:15:29.188  INFO 10056 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@157632c9: startup date [Tue Sep 26 22:15:25 CST 2017]; root of context hierarchy
+2017-09-26 22:15:29.266  INFO 10056 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.springboot.manager.controller.MainController.index()
+2017-09-26 22:15:29.282  INFO 10056 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-26 22:15:29.282  INFO 10056 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-26 22:15:29.313  INFO 10056 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-26 22:15:29.313  INFO 10056 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-26 22:15:29.360  INFO 10056 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-26 22:15:29.391  INFO 10056 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: ServletContext resource [/index.html]
+2017-09-26 22:15:29.906  INFO 10056 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-26 22:15:29.906  INFO 10056 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'getDataSource' has been autodetected for JMX exposure
+2017-09-26 22:15:29.922  INFO 10056 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'getDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=getDataSource,type=DruidDataSource]
+2017-09-26 22:15:29.969  INFO 10056 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8082 (http)
+2017-09-26 22:15:29.985  INFO 10056 --- [main] c.springboot.manager.ManagerApplication  : Started ManagerApplication in 5.276 seconds (JVM running for 5.689)
+2017-09-26 22:15:36.845  INFO 10056 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-26 22:15:36.845  INFO 10056 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-26 22:15:36.867  INFO 10056 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+2017-09-26 22:16:01.510  INFO 3800 --- [main] c.springboot.manager.ManagerApplication  : Starting ManagerApplication on PC-20170506TCHA with PID 3800 (E:\github\test\manager\target\classes started by Administrator in E:\github\test\manager)
+2017-09-26 22:16:01.510  INFO 3800 --- [main] c.springboot.manager.ManagerApplication  : No active profile set, falling back to default profiles: default
+2017-09-26 22:16:01.573  INFO 3800 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@157632c9: startup date [Tue Sep 26 22:16:01 CST 2017]; root of context hierarchy
+2017-09-26 22:16:02.306  WARN 3800 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cmsz.springboot.mapper]' package. Please check your configuration.
+2017-09-26 22:16:02.478  INFO 3800 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-09-26 22:16:02.510  INFO 3800 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-09-26 22:16:02.993  INFO 3800 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$15bc2216] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-09-26 22:16:03.040  INFO 3800 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2017-09-26 22:16:03.914  INFO 3800 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8082 (http)
+2017-09-26 22:16:03.929  INFO 3800 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-09-26 22:16:03.929  INFO 3800 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-09-26 22:16:04.055  INFO 3800 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-09-26 22:16:04.055  INFO 3800 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2482 ms
+2017-09-26 22:16:04.227  INFO 3800 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-26 22:16:04.227  INFO 3800 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'messageDispatcherServlet' to [/services/*]
+2017-09-26 22:16:04.242  INFO 3800 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-26 22:16:04.242  INFO 3800 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-26 22:16:04.242  INFO 3800 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-26 22:16:04.242  INFO 3800 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-26 22:16:04.383  INFO 3800 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2017-09-26 22:16:04.617  INFO 3800 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-26 22:16:04.632  INFO 3800 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-09-26 22:16:04.710  INFO 3800 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-09-26 22:16:04.710  INFO 3800 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-09-26 22:16:04.726  INFO 3800 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-09-26 22:16:04.757  INFO 3800 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-09-26 22:16:05.022  INFO 3800 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-09-26 22:16:05.226  INFO 3800 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-26 22:16:05.788  INFO 3800 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@157632c9: startup date [Tue Sep 26 22:16:01 CST 2017]; root of context hierarchy
+2017-09-26 22:16:05.866  INFO 3800 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.springboot.manager.controller.MainController.index()
+2017-09-26 22:16:05.881  INFO 3800 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-26 22:16:05.881  INFO 3800 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-26 22:16:05.912  INFO 3800 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-26 22:16:05.912  INFO 3800 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-26 22:16:05.959  INFO 3800 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-26 22:16:05.990  INFO 3800 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: ServletContext resource [/index.html]
+2017-09-26 22:16:06.505  INFO 3800 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-26 22:16:06.505  INFO 3800 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'getDataSource' has been autodetected for JMX exposure
+2017-09-26 22:16:06.521  INFO 3800 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'getDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=getDataSource,type=DruidDataSource]
+2017-09-26 22:16:06.583  INFO 3800 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8082 (http)
+2017-09-26 22:16:06.583  INFO 3800 --- [main] c.springboot.manager.ManagerApplication  : Started ManagerApplication in 5.338 seconds (JVM running for 5.716)
+2017-09-26 22:16:10.556  INFO 3800 --- [http-nio-8082-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-26 22:16:10.557  INFO 3800 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-26 22:16:10.575  INFO 3800 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2017-09-27 00:04:06.039  INFO 10512 --- [main] c.springboot.manager.ManagerApplication  : Starting ManagerApplication on PC-20170506TCHA with PID 10512 (E:\github\test\manager\target\classes started by Administrator in E:\github\test\manager)
+2017-09-27 00:04:06.039  INFO 10512 --- [main] c.springboot.manager.ManagerApplication  : No active profile set, falling back to default profiles: default
+2017-09-27 00:04:06.102  INFO 10512 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@157632c9: startup date [Wed Sep 27 00:04:06 CST 2017]; root of context hierarchy
+2017-09-27 00:04:06.773  WARN 10512 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.cmsz.springboot.mapper]' package. Please check your configuration.
+2017-09-27 00:04:06.992  INFO 10512 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-09-27 00:04:07.008  INFO 10512 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2017-09-27 00:04:07.460  INFO 10512 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$cec6104d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-09-27 00:04:07.491  INFO 10512 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2017-09-27 00:04:08.365  INFO 10512 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8082 (http)
+2017-09-27 00:04:08.380  INFO 10512 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-09-27 00:04:08.380  INFO 10512 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.15
+2017-09-27 00:04:08.506  INFO 10512 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-09-27 00:04:08.506  INFO 10512 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2404 ms
+2017-09-27 00:04:08.662  INFO 10512 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-09-27 00:04:08.678  INFO 10512 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'messageDispatcherServlet' to [/services/*]
+2017-09-27 00:04:08.678  INFO 10512 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-09-27 00:04:08.678  INFO 10512 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-09-27 00:04:08.678  INFO 10512 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-09-27 00:04:08.678  INFO 10512 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-09-27 00:04:08.818  INFO 10512 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2017-09-27 00:04:09.083  INFO 10512 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-09-27 00:04:09.099  INFO 10512 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-09-27 00:04:09.161  INFO 10512 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-09-27 00:04:09.161  INFO 10512 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-09-27 00:04:09.161  INFO 10512 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-09-27 00:04:09.208  INFO 10512 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-09-27 00:04:09.427  INFO 10512 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-09-27 00:04:09.615  INFO 10512 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-09-27 00:04:10.192  INFO 10512 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@157632c9: startup date [Wed Sep 27 00:04:06 CST 2017]; root of context hierarchy
+2017-09-27 00:04:10.270  INFO 10512 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.springboot.manager.controller.MainController.index()
+2017-09-27 00:04:10.286  INFO 10512 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/add]}" onto public int com.springboot.manager.controller.UserController.add()
+2017-09-27 00:04:10.286  INFO 10512 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/del]}" onto public int com.springboot.manager.controller.UserController.delete()
+2017-09-27 00:04:10.286  INFO 10512 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/query]}" onto public java.util.List<com.springboot.manager.domain.User> com.springboot.manager.controller.UserController.query()
+2017-09-27 00:04:10.286  INFO 10512 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/upadte]}" onto public int com.springboot.manager.controller.UserController.upadte()
+2017-09-27 00:04:10.286  INFO 10512 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-09-27 00:04:10.286  INFO 10512 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-09-27 00:04:10.317  INFO 10512 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-27 00:04:10.317  INFO 10512 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-27 00:04:10.364  INFO 10512 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-09-27 00:04:10.395  INFO 10512 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: ServletContext resource [/index.html]
+2017-09-27 00:04:10.956  INFO 10512 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-09-27 00:04:10.956  INFO 10512 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'getDataSource' has been autodetected for JMX exposure
+2017-09-27 00:04:10.956  INFO 10512 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'getDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=getDataSource,type=DruidDataSource]
+2017-09-27 00:04:11.020  INFO 10512 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8082 (http)
+2017-09-27 00:04:11.035  INFO 10512 --- [main] c.springboot.manager.ManagerApplication  : Started ManagerApplication in 5.292 seconds (JVM running for 5.63)
+2017-09-27 00:04:30.569  INFO 10512 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-09-27 00:04:30.569  INFO 10512 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-09-27 00:04:30.587  INFO 10512 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms

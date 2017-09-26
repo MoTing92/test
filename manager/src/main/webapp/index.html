@@ -1,59 +1,118 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head id="Head1">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>jQuery.EasyUI- 1.2.2 应用实例</title>
-    <link href="Css/default.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="themes/default/easyui.css" />
-    <link rel="stylesheet" type="text/css" href="themes/icon.css" />
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery.easyui.min.js"></script>
-	<script type="text/javascript" src='js/outlook2.js'> </script>
-    
-    <script type="text/javascript">
-    var _menus = {"menus":[
-   						{"menuid":"1","icon","menuname":"控件使用",
-   							"menus":[
-   									{"menuid":"12","menuname":"疯狂秀才","url":"http://www.mycodes.net"},
-   									{"menuid":"13","menuname":"用户管理","url":"demo2.html"},
-   									{"menuid":"14","menuname":"角色管理","url":"demo2.html"},
-   									{"menuid":"15","menuname":"权限设置","url":"demo.html"},
-   									{"menuid":"16","menuname":"系统日志","url":"demo1.html"}
-   								]
-   						},{"menuid":"8","icon":"icon-sys","menuname":"员工管理",
-   							"menus":[{"menuid":"21","menuname":"员工列表","url":"demo.html"},
-   									{"menuid":"22","menuname":"视频监控","url":"demo1.html"}
-   								]
-   						}
-   				]};
 
-
-    </script>
-
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>后台管理系统</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="assets/css/dpl-min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/bui-min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/main-min.css" rel="stylesheet" type="text/css" />
 </head>
-<body class="easyui-layout" style="overflow-y: hidden"  scroll="no">
-	<noscript>
-		<div style=" position:absolute; z-index:100000; height:2046px;top:0px;left:0px; width:100%; background:white; text-align:center;">
-	    	<img src="images/noscript.gif" alt='抱歉，请开启脚本支持！' />
-		</div>
-	</noscript>
-    
-    <div region="north" split="true" border="false" style="overflow: hidden; height: 50px;
-        background: url(images/layout-browser-hd-bg.gif) #7f99be repeat-x center 50%;
-        line-height: 40px;color: #fff; font-family: Verdana, 微软雅黑,黑体">
-        <span style="float:right; padding-right:20px;" class="head">欢迎 疯狂秀才 <a href="#" id="editpass">修改密码</a> <a href="#" id="loginOut">安全退出</a></span>
-        <span style="padding-left:10px; font-size: 16px; "><img src="images/xiaohui.jpg" width="20" height="20" align="absmiddle" /> jQuery.EasyUI- 1.2.2 应用实例</span>
+<body>
+
+<div class="header">
+
+    <div class="dl-title">
+        <!--<img src="/chinapost/Public/assets/img/top.png">-->
     </div>
-    
-    <div region="west" hide="true" split="true" title="导航菜单" style="width:180px;" id="west">
-		<div id="nav" class="easyui-accordion" fit="true" border="false">
-		<!--  导航内容 -->
-		</div>
+
+    <div class="dl-log">欢迎您，<span class="dl-log-user">root</span><a href="/chinapost/index.php?m=Public&a=logout" title="退出系统" class="dl-log-quit">[退出]</a>
     </div>
-    
-    <div id="mainPanle" region="center" style="background: #eee; overflow-y:hidden">
-    	<div id="tabs" class="easyui-tabs"  fit="true" border="false" >
-    	</div>
+</div>
+<div class="content">
+    <div class="dl-main-nav">
+        <div class="dl-inform"><div class="dl-inform-title"><s class="dl-inform-icon dl-up"></s></div></div>
+        <ul id="J_Nav"  class="nav-list ks-clear">
+            <li class="nav-item dl-selected"><div class="nav-item-inner nav-home">系统管理</div></li>		
+            <li class="nav-item dl-selected"><div class="nav-item-inner nav-order">学生信息管理</div></li>
+			<li class="nav-item dl-selected"><div class="nav-item-inner nav-home">课程管理</div></li>		
+            <li class="nav-item dl-selected"><div class="nav-item-inner nav-home">成绩管理</div></li>		
+            <li class="nav-item dl-selected"><div class="nav-item-inner nav-home">关于我们</div></li>		
+            
+        </ul>
     </div>
+    <ul id="J_NavContent" class="dl-tab-conten">
+
+    </ul>
+</div>
+<script type="text/javascript" src="assets/js/jquery-1.8.1.min.js"></script>
+<script type="text/javascript" src="assets/js/bui-min.js"></script>
+<script type="text/javascript" src="assets/js/common/main-min.js"></script>
+<script type="text/javascript" src="assets/js/config-min.js"></script>
+<script>
+    
+	BUI.use('common/main', function() {
+		var config = [ {
+			id : '1',
+			homePage : '12',
+			menu : [ {
+				text : '系统管理',
+				items : [ {
+					id : '12',
+					text : '用户管理',
+					href : 'User/userIndex.html'
+				}, {
+					id : '13',
+					text : '角色管理',
+					href : 'role/list'
+				}, {
+					id : '14',
+					text : '菜单管理',
+					href : 'menu/list'
+				} ]
+			} ]
+		}, {
+			id : '2',
+			homePage : '21',
+			menu : [ {
+				text : '学生信息管理',
+				items : [ {
+					id : '21',
+					text : '查询业务',
+					href : 'Node/index.html'
+				} ]
+			} ]
+		},{
+			id : '3',
+			homePage : '31',
+			menu : [ {
+				text : '课程管理',
+				items : [ {
+					id : '31',
+					text : '角色管理',
+					href : 'Role/index.html'
+				} ]
+			} ]
+		},{
+			id : '4',
+			homePage : '41',
+			menu : [ {
+				text : '成绩管理',
+				items : [ {
+					id : '41',
+					text : '角色管理',
+					href : 'Role/index.html'
+				}]
+			} ]
+		},{
+			id : '5',
+			homePage : '51',
+			menu : [ {
+				text : '关于我们',
+				items : [ {
+					id : '51',
+					text : '角色管理',
+					href : 'Role/index.html'
+				} ]
+			} ]
+		}];
+		new PageUtil.MainPage({
+			modulesConfig : config
+		});
+	});
+</script>
+<div style="text-align:center;">
+<p>来源：<a href="http://www.mycodes.net/" target="_blank">源码之家</a></p>
+</div>
 </body>
 </html>
